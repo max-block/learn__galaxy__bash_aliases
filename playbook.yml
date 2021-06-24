@@ -1,0 +1,8 @@
+- hosts: all
+  vars:
+    bash_aliases:
+      - {alias: "a1", command: "ls -la"}
+      - {alias: "a2", command: "df -h"}
+
+  roles:
+    - { role: igor_mukhin.bash_aliases, sudo: false }
